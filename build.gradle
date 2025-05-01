@@ -1,0 +1,30 @@
+buildscript {
+
+    repositories {
+        google()
+        mavenCentral()
+    }
+
+    dependencies {
+        classpath 'com.android.tools.build:gradle:8.6.0'
+        classpath 'org.jetbrains.kotlin:kotlin-gradle-plugin:2.1.0'
+    }
+}
+
+
+
+plugins {
+    id("com.google.devtools.ksp") version "2.1.0-1.0.29" apply(false)
+}
+
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+        maven { url("https://jitpack.io") }
+    }
+}
+
+tasks.register('clean', Delete) {
+    delete rootProject.buildDir
+}

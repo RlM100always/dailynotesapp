@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:installLocation="internalOnly">
+
+    <uses-permission
+        android:name="android.permission.ACCESS_NETWORK_STATE"
+        tools:node="remove" />
+
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+
+    <application
+        android:name=".DilyNoteApplication"
+        android:allowBackup="true"
+        android:appCategory="productivity"
+        android:dataExtractionRules="@xml/data_rules"
+        android:fullBackupContent="@xml/backup_content"
+        android:icon="@drawable/app_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/app_logo"
+        android:theme="@style/AppTheme">
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+
+        </provider>
+
+        <activity
+            android:name=".activities.MainActivity"
+            android:exported="true"
+            android:theme="@style/MainActivity">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.shortcuts"
+                android:resource="@xml/shortcuts" />
+
+        </activity>
+
+        <activity
+            android:name=".activities.MakeList"
+            android:windowSoftInputMode="adjustResize" />
+
+        <activity
+            android:name=".activities.TakeNote"
+            android:exported="true"
+            android:windowSoftInputMode="adjustResize">
+
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="text/plain" />
+            </intent-filter>
+
+        </activity>
+
+        <activity android:name=".activities.ViewImage" />
+
+        <activity android:name=".activities.SelectLabels" />
+
+        <activity
+            android:name=".activities.RecordAudio"
+            android:launchMode="singleTask"
+            tools:targetApi="n" />
+
+        <activity android:name=".activities.PlayAudio" />
+
+        <activity
+            android:name=".activities.ConfigureWidget"
+            android:exported="false">
+
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_CONFIGURE" />
+            </intent-filter>
+
+        </activity>
+
+        <receiver
+            android:name=".widget.WidgetProvider"
+            android:exported="false"
+            android:label="@string/single_note_or_list">
+
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget" />
+
+        </receiver>
+
+        <receiver
+            android:name=".ReminderReceiver"
+            android:exported="false">
+
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.app.action.SCHEDULE_EXACT_ALARM_PERMISSION_STATE_CHANGED" />
+            </intent-filter>
+
+        </receiver>
+
+        <service
+            android:name=".widget.WidgetService"
+            android:permission="android.permission.BIND_REMOTEVIEWS" />
+
+        <service
+            android:name=".AttachmentDeleteService"
+            android:foregroundServiceType="dataSync"
+            tools:ignore="ForegroundServicePermission" />
+
+        <service
+            android:name=".audio.AudioRecordService"
+            android:foregroundServiceType="microphone"
+            tools:targetApi="n"
+            tools:ignore="ForegroundServicePermission" />
+
+        <service android:name=".audio.AudioPlayService" />
+
+    </application>
+
+</manifest>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppTheme" parent="Base.AppTheme">
+
+        <item name="colorPrimary">@color/main_look</item>
+
+        <item name="alternateFabTint">@color/LightBlue500</item>
+        <item name="alternateFabBackground">@color/Blue50</item>
+
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+
+
+</resources>

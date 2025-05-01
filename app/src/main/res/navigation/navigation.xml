@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:startDestination="@+id/Notes">
+
+    <fragment
+        android:id="@+id/Notes"
+        android:name="com.techtravelcoder.dailynote.fragments.Notes"
+        android:label="@string/app_name">
+
+        <action
+            android:id="@+id/NotesToSearch"
+            app:destination="@id/Search"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/Labels"
+        android:name="com.techtravelcoder.dailynote.fragments.Labels"
+        android:label="@string/labels">
+
+        <action
+            android:id="@+id/LabelsToDisplayLabel"
+            app:destination="@id/DisplayLabel"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/Deleted"
+        android:name="com.techtravelcoder.dailynote.fragments.Deleted"
+        android:label="@string/deleted" />
+
+    <fragment
+        android:id="@+id/Archived"
+        android:name="com.techtravelcoder.dailynote.fragments.Archived"
+        android:label="@string/archived" />
+
+    <fragment
+        android:id="@+id/Settings"
+        android:name="com.techtravelcoder.dailynote.fragments.Settings"
+        android:label="@string/settings" />
+
+    <fragment
+        android:id="@+id/Search"
+        android:name="com.techtravelcoder.dailynote.fragments.Search" />
+
+    <fragment
+        android:id="@+id/DisplayLabel"
+        android:name="com.techtravelcoder.dailynote.fragments.DisplayLabel"
+        android:label="{SelectedLabel}" />
+
+</navigation>

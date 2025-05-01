@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollIndicators="top|bottom">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+
+            android:drawablePadding="10dp"
+            android:gravity="center_vertical"
+            android:drawableLeft="@drawable/baseline_access_time_24"
+            android:id="@+id/Date"
+            style="@style/TextView.Clickable.Dialog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/date" />
+
+        <TextView
+            android:drawablePadding="10dp"
+            android:gravity="center_vertical"
+            android:drawableLeft="@drawable/reminder"
+            android:id="@+id/Time"
+            style="@style/TextView.Clickable.Dialog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/time" />
+
+        <TextView
+            android:drawablePadding="10dp"
+            android:gravity="center_vertical"
+            android:drawableLeft="@drawable/baseline_apps_24"
+            android:id="@+id/Frequency"
+            style="@style/TextView.Clickable.Dialog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</ScrollView>

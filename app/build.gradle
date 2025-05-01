@@ -1,0 +1,83 @@
+import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
+
+plugins {
+    id 'com.android.application'
+    id 'kotlin-android'
+    id 'kotlin-parcelize'
+    id 'com.google.devtools.ksp'
+
+}
+
+android {
+    compileSdk 34
+    namespace 'com.techtravelcoder.dailynote'
+
+    defaultConfig {
+        applicationId 'com.techtravelcoder.dailynote'
+        minSdk 21
+        targetSdk 34
+        versionCode 3
+        versionName "3.0"
+        resourceConfigurations += ['en', 'ca', 'cs', 'da', 'de', 'el', 'es', 'fr', 'hu', 'in', 'it', 'ja', 'ko', 'my', 'nb', 'nl', 'nn', 'pl', 'pt-rBR', 'pt-rPT', 'ro', 'ru', 'sk', 'sv', 'tl', 'tr', 'uk', 'vi', 'zh-rCN']
+        vectorDrawables.generatedDensities = []
+    }
+
+    ksp {
+        arg("room.generateKotlin", "true")
+        arg("room.schemaLocation", "$projectDir/schemas")
+    }
+
+    buildTypes {
+
+        debug {
+            applicationIdSuffix ".debug"
+        }
+        release {
+            crunchPngs false
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro"
+        }
+    }
+
+    kotlinOptions { jvmTarget = "1.8" }
+
+    buildFeatures {
+        viewBinding true
+        buildConfig true
+    }
+
+    packagingOptions.resources {
+        excludes += ["DebugProbesKt.bin", "META-INF/**.version", "kotlin/**.kotlin_builtins", "kotlin-tooling-metadata.json"]
+    }
+
+    androidResources {
+        generateLocaleConfig = true
+    }
+}
+
+tasks.withType(KotlinCompile).configureEach {
+    kotlinOptions.jvmTarget = "1.8"
+}
+
+dependencies {
+
+    final def navVersion = "2.3.5"
+    final def roomVersion = "2.6.1"
+
+    ksp "androidx.room:room-compiler:$roomVersion"
+    implementation "androidx.room:room-ktx:$roomVersion"
+    implementation "androidx.room:room-runtime:$roomVersion"
+
+    implementation "androidx.work:work-runtime:2.9.0"
+
+    implementation "androidx.navigation:navigation-ui-ktx:$navVersion"
+    implementation "androidx.navigation:navigation-fragment-ktx:$navVersion"
+
+    implementation "org.ocpsoft.prettytime:prettytime:4.0.6.Final"
+    implementation "com.google.android.material:material:1.4.0"
+
+    implementation "com.github.bumptech.glide:glide:4.15.1"
+    implementation "com.github.rambler-digital-solutions:swipe-layout-android:1.0.17"
+    implementation "com.davemorrissey.labs:subsampling-scale-image-view-androidx:3.10.0"
+}

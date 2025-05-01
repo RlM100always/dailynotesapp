@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Fragment Titles -->
+    <string name="notes">Note</string>
+    <string name="labels">Etichette</string>
+    <string name="deleted">Cestino</string>
+    <string name="archived">Archivio</string>
+    <string name="settings">Impostazioni</string>
+
+    <!-- Menu Options -->
+    <string name="share">Condividi</string>
+    <string name="filter">Filtra</string>
+    <string name="search">Cerca</string>
+    <string name="delete">Elimina</string>
+    <string name="restore">Ripristina</string>
+    <string name="archive">Archivia</string>
+    <string name="unarchive">Annulla Archiviazione</string>
+    <string name="delete_all">Elimina tutto</string>
+    <string name="change_color">Cambia colore</string>
+    <string name="delete_forever">Elimina Definitivamente</string>
+
+    <!-- Pinning -->
+    <string name="pin">Fissa nota in alto</string>
+    <string name="unpin">Non fissare nota in alto</string>
+    <string name="pinned">Note fissate in alto</string>
+    <string name="others">Altro</string>
+
+    <!-- Chooser dialog hints -->
+    <string name="view_note">Vedi nota…</string>
+
+    <!-- Dialogs -->
+    <string name="save">Salva</string>
+    <string name="edit">Modifica</string>
+    <string name="cancel">Cancella</string>
+    <string name="open_link">Apri link</string>
+    <string name="make_list">Nuovo elenco</string>
+    <string name="take_note">Scrivere nota</string>
+    <string name="add_label">Aggiungi etichetta</string>
+    <string name="export">Esporta</string>
+    <string name="view_file">Visualizza file</string>
+    <string name="save_to_device">Salva sul dispositivo</string>
+    <string name="edit_label">Modifica etichetta</string>
+    <string name="label_exists">Etichetta esiste</string>
+    <string name="delete_label">Eliminare etichetta?</string>
+    <string name="create_new">Non c\'è un etichetta.Vuoi crearne una?</string>
+    <string name="delete_all_notes">Elimina tutte le note?</string>
+    <string name="delete_note_forever">Eliminare nota definitivamente?</string>
+    <string name="your_notes_associated">Le note associate a questa etichetta non verranno eliminate</string>
+
+    <!-- Lists and Notes -->
+    <string name="note">Nota</string>
+    <string name="item">Elemento</string>
+    <string name="date">Date</string>
+    <string name="title">Titolo</string>
+    <string name="add_item">Aggiungi elemento</string>
+    <string name="drag_handle">Trascina</string>
+    <string name="bold">Grassetto</string>
+    <string name="link">Link</string>
+    <string name="italic">Corsivo</string>
+    <string name="strikethrough">Barrato</string>
+    <string name="clear_formatting">Cancella formattazione del testo</string>
+    <string name="monospace">Monospazio</string>
+
+    <!-- Miscellaneous -->
+    <string name="saved_to_device">Salvata sul dispositivo</string>
+    <string name="saved_to_notally">Salvata su Notally</string>
+    <string name="empty_note">Nota vuota</string>
+    <string name="empty_list">Lista vuota</string>
+    <string name="cant_open_link">Impossibile aprire il link</string>
+    <string name="invalid_backup">Backup invalido</string>
+    <string name="imported_backup">Backup importato</string>
+    <string name="something_went_wrong">Qualcosa è andato storto. Per favore riprova.</string>
+
+    <!-- Settings Page -->
+    <string name="appearance">Aspetto</string>
+
+    <string name="view">Vista</string>
+    <string name="list">Lista</string>
+    <string name="grid">Griglia</string>
+
+    <string name="theme">Tema</string>
+    <string name="dark">Scuro</string>
+    <string name="light">Chiaro</string>
+    <string name="follow_system">Tema di Sistema</string>
+
+    <string name="date_format">Formato data</string>
+    <string name="none">Nessuno</string>
+
+    <string name="content_density">Densità del contenuto</string>
+    <string name="max_items_to_display">Numero massimo di elementi da visualizzare nella lista</string>
+    <string name="max_lines_to_display">Numero massimo di elementi da visualizzare nella nota</string>
+
+    <string name="backup">Backup</string>
+    <string name="export_backup">Esporta backup</string>
+    <string name="import_backup">Importa backup</string>
+
+    <string name="about">Informazioni</string>
+    <string name="libraries">Librerie</string>
+    <string name="rate">Recensisci questa app</string>
+</resources>

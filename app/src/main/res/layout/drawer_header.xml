@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:fitsSystemWindows="true">
+
+    <TextView
+
+        android:paddingTop="15dp"
+        android:paddingLeft="15dp"
+
+        android:textColor="@color/main_look"
+        android:fontFamily="@font/heading"
+        android:textSize="35dp"
+        android:text="@string/app_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:paddingLeft="15dp"
+
+        android:fontFamily="@font/heading"
+        android:textSize="16dp"
+        android:text="Enojoy Unlimited Free Notes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

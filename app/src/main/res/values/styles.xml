@@ -1,0 +1,174 @@
+<resources>
+
+    <style name="Base.AppTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorSecondary">@color/main_look</item>
+        <item name="colorOnSecondary">?attr/colorOnPrimary</item>
+
+        <item name="colorPrimaryDark">?attr/colorSurface</item>
+
+        <item name="android:navigationBarColor">@color/Black</item>
+
+        <item name="windowActionModeOverlay">true</item>
+
+        <item name="textAppearanceButton">@style/TextAppearance.Subtitle2</item>
+        <item name="textAppearanceSubtitle2">@style/TextAppearance.Subtitle2</item>
+        <!-- Menu Items, EditTexts, Dialog Titles -->
+        <item name="textAppearanceSubtitle1">@style/TextAppearance.Subtitle1</item>
+        <item name="textAppearanceHeadline6">@style/TextAppearance.Headline6</item>
+
+        <!-- Submenu Title -->
+        <item name="textAppearancePopupMenuHeader">@style/TextAppearance.Subtitle2.PopupMenu</item>
+
+        <item name="toolbarStyle">@style/Toolbar</item>
+        <item name="chipGroupStyle">@style/ChipGroup</item>
+
+        <item name="materialAlertDialogTheme">@style/AlertDialog</item>
+    </style>
+
+    <style name="AppTheme" parent="Base.AppTheme">
+
+                <item name="colorPrimary">@color/main_look</item>
+
+                <item name="alternateFabTint">@color/LightBlue500</item>
+                <item name="alternateFabBackground">@color/Blue50</item>
+    </style>
+
+
+
+    <style name="MainActivity" parent="AppTheme">
+        <item name="android:statusBarColor">@color/Transparent</item>
+    </style>
+
+
+    <style name="TextAppearance.Headline6.Toolbar">
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="TextAppearance.Headline6" parent="TextAppearance.MaterialComponents.Headline6">
+        <item name="android:letterSpacing">0.02</item>
+    </style>
+
+    <style name="TextAppearance.Subtitle1" parent="TextAppearance.MaterialComponents.Subtitle1">
+        <item name="android:letterSpacing">0.02</item>
+    </style>
+
+    <style name="TextAppearance.Subtitle2" parent="TextAppearance.MaterialComponents.Subtitle2">
+        <item name="android:letterSpacing">0.02</item>
+    </style>
+
+    <style name="TextAppearance.Subtitle2.PopupMenu">
+        <item name="android:textColor">?attr/colorControlNormal</item>
+    </style>
+
+
+    <style name="Toolbar" parent="Widget.MaterialComponents.Toolbar.Surface">
+        <item name="android:elevation">4dp</item>
+        <item name="titleTextAppearance">@style/TextAppearance.Headline6.Toolbar</item>
+    </style>
+
+
+    <style name="Preview" parent="Widget.AppCompat.TextView">
+        <item name="android:paddingBottom">16dp</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:textColor">?attr/colorControlNormal</item>
+        <item name="android:textAppearance">?attr/textAppearanceBody2</item>
+    </style>
+
+    <style name="Preview.ListItem">
+        <item name="android:paddingBottom">4dp</item>
+        <item name="android:drawablePadding">8dp</item>
+    </style>
+
+    <style name="TextView.Clickable" parent="Widget.AppCompat.TextView">
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:background">?attr/selectableItemBackground</item>
+    </style>
+
+    <style name="TextView.Clickable.Dialog">
+        <item name="android:paddingStart">24dp</item>
+        <item name="android:paddingEnd">24dp</item>
+        <item name="android:paddingTop">16dp</item>
+        <item name="android:paddingBottom">16dp</item>
+        <item name="android:textAppearance">?attr/textAppearanceBody2</item>
+    </style>
+
+
+    <style name="ChipGroup" parent="Widget.MaterialComponents.ChipGroup">
+        <item name="chipSpacingVertical">8dp</item>
+    </style>
+
+
+    <style name="Chip" parent="Widget.MaterialComponents.Chip.Choice">
+        <item name="android:stateListAnimator">@null</item>
+        <item name="android:textColor">@color/navigation_view_item</item>
+        <item name="chipStrokeWidth">1dp</item>
+        <item name="chipStrokeColor">@color/chip_stroke</item>
+        <item name="chipBackgroundColor">@color/chip_background</item>
+        <item name="ensureMinTouchTargetSize">false</item>
+    </style>
+
+
+    <style name="AlertDialog.Title" parent="MaterialAlertDialog.MaterialComponents.Title.Text">
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+
+
+    <style name="AlertDialog" parent="ThemeOverlay.MaterialComponents.MaterialAlertDialog">
+        <item name="materialAlertDialogTitleTextStyle">@style/AlertDialog.Title</item>
+    </style>
+
+    <style name="Colorless" parent="ThemeOverlay.MaterialComponents">
+        <item name="colorSecondary">?attr/colorOnSurface</item>
+    </style>
+
+
+    <style name="Preference" parent="TextView.Clickable">
+        <item name="android:padding">16dp</item>
+        <item name="android:textAppearance">?attr/textAppearanceBody1</item>
+    </style>
+
+    <style name="PreferenceHeader" parent="Widget.AppCompat.TextView">
+        <item name="android:paddingEnd">16dp</item>
+        <item name="android:paddingTop">16dp</item>
+        <item name="android:paddingStart">16dp</item>
+        <item name="android:paddingBottom">8dp</item>
+        <item name="android:textColor">@color/main_look</item>
+        <item name="android:textAppearance">?attr/textAppearanceSubtitle2</item>
+    </style>
+
+
+    <style name="RoundedRectangle" parent="ShapeAppearance.MaterialComponents.SmallComponent">
+        <item name="cornerSize">50dp</item>
+    </style>
+
+
+    <style name="WidgetPreview.ListItem" parent="Widget.AppCompat.TextView">
+        <item name="android:drawablePadding">8dp</item>
+        <item name="android:drawableStart">@drawable/checkbox_outline_16</item>
+        <item name="android:textAppearance">@style/TextAppearance.MaterialComponents.Body2</item>
+    </style>
+
+    <style name="PillButton" parent="Widget.MaterialComponents.Button.UnelevatedButton">
+        <item name="backgroundColor">@color/main_look</item>
+        <item name="android:layout_width">112dp</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:minHeight">0dp</item>
+        <item name="android:paddingStart">0dp</item>
+        <item name="android:paddingEnd">0dp</item>
+        <item name="android:paddingTop">14dp</item>
+        <item name="android:paddingBottom">14dp</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="shapeAppearanceOverlay">@style/ShapeAppearanceOverlay.MaterialComponents.Chip</item>
+    </style>
+
+    <style name="SectionTitleStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_marginBottom">16dp</item>
+    </style>
+</resources>

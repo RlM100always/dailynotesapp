@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="Blue50">#E3F2FD</color>
+    <color name="Indigo100">#C5CAE9</color>
+
+    <color name="LightBlue500">#03A9F4</color>
+    <color name="LightBlue100">#B3E5fC</color>
+
+    <color name="Black">#000000</color>
+    <color name="Transparent">#00000000</color>
+
+    <color name="Grey100">#F5F5F5</color>
+
+    <color name="Default">#FFFFFF</color>
+    <color name="NC1">#F88D8D</color>
+    <color name="NC2">#C4FAA2</color>
+    <color name="NC3">#F0D294</color>
+    <color name="NC4">#F8D8B5</color>
+    <color name="NC5">#BBD8E6</color>
+    <color name="Coral">#DEFAA9</color>
+    <color name="Orange">#99E9E3</color>
+    <color name="Sand">#FFF8B9</color>
+    <color name="Storm">#C6CEEB</color>
+    <color name="Fog">#D3E4EC</color>
+    <color name="Sage">#FDCCFB</color>
+    <color name="Mint">#E2F6D3</color>
+    <color name="Dusk">#D3BFDB</color>
+    <color name="Flower">#BBC6F8</color>
+    <color name="Blossom">#F5E2DC</color>
+    <color name="Clay">#F8F1DE</color>
+
+
+    <color name="Decorator">#DBD9D9</color>
+
+
+
+
+
+
+
+
+
+
+    <color name="main_look">#FF5722</color>
+</resources>
