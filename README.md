@@ -48,7 +48,7 @@
 
 ## 📲 Download the App
 
-[![Google Play](https://img.shields.io/badge/Google%20Play-Download-green?style=for-the-badge&logo=google-play)](https://play.google.com/store/apps/details?id=your.package.name)
+[![Google Play](https://img.shields.io/badge/Google%20Play-Download-green?style=for-the-badge&logo=google-play)](https://play.google.com/store/apps/details?id=com.techtravelcoder.dailynote&pcampaignid=web_share)
 
 <!-- Replace the above link with your actual Play Store link -->
 
@@ -74,8 +74,7 @@
 
 ## 🌐 GitHub Repository
 
-🔗 **[GitHub Profile Link](https://github.com/yourusername)**  
-🔗 **[GitHub Repository](https://github.com/yourusername/dailynotes)**
+🔗 **[GitHub Profile Link](https://github.com/RlM100always)**  
 
 ---
 
