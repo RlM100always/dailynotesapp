@@ -1,5 +1,15 @@
 # 🗒️ DailyNotes - Easy Notepad
 
+<p align="center">
+  <a href="https://play.google.com/store/apps/details?id=com.techtravelcoder.dailynote&pcampaignid=web_share" target="_blank">
+    <img src="https://img.shields.io/badge/Live%20App-Google%20Play-34A853?logo=google-play&logoColor=white" alt="Live App on Google Play"/>
+  </a>
+  &nbsp;
+  <a href="https://drive.google.com/file/d/1odUPnFmQ-dppIlhmc23CDLpgVs6mkThW/view" target="_blank">
+    <img src="https://img.shields.io/badge/Demo%20Video-Watch-red?logo=youtube&logoColor=white" alt="Demo Video"/>
+  </a>
+</p>
+
 **DailyNotes - Easy Notepad** is a smart, lightweight, and beautifully crafted note-taking Android application to help you stay organized and productive! Whether you're jotting down quick thoughts, organizing projects, or setting reminders — DailyNotes makes it effortless. ✨
 
 ---
